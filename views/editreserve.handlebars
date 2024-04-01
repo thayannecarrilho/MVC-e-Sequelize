@@ -1,0 +1,55 @@
+<div class="container">
+<h2>Editar tblreservas</h2>
+
+<form class="row g-3" action="/reserve/update" method="POST">
+  <input type="hidden" name="id" value="{{tblreservas.id}}">
+  <div class="col-6">
+    <label for="veiculo" class="form-label">Veículo: </label>
+    <input type="text" class="form-control" name="veiculo" value="{{tblreservas.veiculo}}">
+  </div>
+  <div class="col-6">
+    <label for="placa" class="form-label">Placa: </label>
+    <input type="text" class="form-control" name="placa" value="{{tblreservas.placa}}">
+  </div>
+  <div class="col-6">
+    <label for="localretirada" class="form-label">Local de Retirada: </label>
+    <select class="form-control" name="localretirada">
+      <option value="{{tblreservas.localretirada}}">{{tblreservas.localretirada}}</option>
+      <option value="Congonhas Airport">Congonhas Airport</option>
+      <option value="Guarulhos Airport">Guarulhos Airport</option>
+      <option value="Campinas Airport">Campinas Airport</option>
+    </select>
+  </div>
+  <div class="col-3">
+    <label for="dataretirada" class="form-label">Data da Retirada: </label>
+    <input type="date" id="date" name="dataretirada" class="form-control" value="{{#formatDate dataretirada}}{{/formatDate}}">  
+  </div>
+  <div class="col-3">
+    <label for="horaretirada" class="form-label">Hora da Retirada: </label>
+    <input type="time" name="horaretirada" class="form-control" value="{{tblreservas.horaretirada}}">
+  </div>
+  <div class="col-6">
+    <label for="localdevolucao" class="form-label">Local de Devolução: </label>
+    <select class="form-control" name="localdevolucao">
+      <option value="{{tblreservas.localdevolucao}}">{{tblreservas.localdevolucao}}</option>
+      <option value="Congonhas Airport">Congonhas Airport</option>
+      <option value="Guarulhos Airport">Guarulhos Airport</option>
+      <option value="Campinas Airport">Campinas Airport</option>
+    </select>
+  </div>
+  <div class="col-3">
+    <label for="datadevolucao" class="form-label">Data de Devolução: </label>
+    <input type="date" name="datadevolucao" class="form-control" value="{{#formatDate datadevolucao}}{{/formatDate}}">  
+  </div>  
+  <div class="col-3">
+    <label for="horadevolucao" class="form-label">Hora da Devolução: </label>
+    <input type="time" name="horadevolucao" class="form-control" value="{{tblreservas.horadevolucao}}">
+  </div>
+  <span>
+  <input type="submit" class="btn btn-outline-dark" value="Atualizar"> 
+</form>
+</div>
+
+
+
+

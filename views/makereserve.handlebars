@@ -1,0 +1,56 @@
+<div class="container">
+  <h2>Realizar Reserva</h2>
+  <div class="card-form">
+<form class="row g-3" action="/makereserve/insert" method="POST">
+  <div class="col-md-4">
+    <label for="cpf" class="form-label">CPF: </label>
+    <input type="text" name="cpf" class="form-control" placeholder="Apenas 11 dígitos">
+  </div>
+    <div class="col-4">
+    <label for="veiculo" class="form-label">Veículo: </label>
+    <input type="text" name="veiculo" class="form-control">
+  </div>
+  <div class="col-4">
+    <label for="placa" class="form-label">Placa: </label>
+    <input type="text" name="placa" class="form-control">
+  </div>
+  <div class="col-6">
+    <label for="localretirada" class="form-label">Local de Retirada: </label>
+    <select class="form-control" name="localretirada">
+      <option value=""></option>
+      <option value="Congonhas Airport">Congonhas Airport</option>
+      <option value="Guarulhos Airport">Guarulhos Airport</option>
+      <option value="Campinas Airport">Campinas Airport</option>
+    </select>
+  </div>
+  <div class="col-3">
+    <label for="dataretirada" class="form-label">Data da Retirada: </label>
+    <input type="date" id="date" name="dataretirada" class="form-control">
+    
+  </div>
+  <div class="col-3">
+    <label for="horaretirada" class="form-label">Hora da Retirada: </label>
+    <input type="time" name="horaretirada" class="form-control">
+  </div>
+  <div class="col-6">
+    <label for="localdevolucao" class="form-label">Local de Devolução: </label>
+    <select class="form-control" name="localdevolucao">
+      <option value=""></option>
+      <option value="Congonhas Airport">Congonhas Airport</option>
+      <option value="Guarulhos Airport">Guarulhos Airport</option>
+      <option value="Campinas Airport">Campinas Airport</option>
+    </select>
+  </div>
+  <div class="col-3">
+    <label for="datadevolucao" class="form-label">Data de Devolução: </label>
+    <input type="date" name="datadevolucao" class="form-control">
+  </div>  
+  <div class="col-3">
+    <label for="horadevolucao" class="form-label">Hora da Devolução: </label>
+    <input type="time" name="horadevolucao" class="form-control">
+  </div>
+  </div>
+    <input type="submit" class="btn btn-outline-dark" value="Cadastrar">
+</form>
+</div>
+

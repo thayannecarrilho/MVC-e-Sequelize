@@ -1,0 +1,56 @@
+{{#each tblreservas}} 
+<div class="container">
+  
+  <div class="card-form">
+<form class="row g-3">
+  <div class="col-3 resp">
+    <label class="form-label item">Nº da Reserva: </label>
+    {{id}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Veículo: </label>
+    {{veiculo}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Placa </label>
+    {{placa}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Local de Retirada: </label>
+    {{localretirada}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Data da Retirada: </label>
+    {{#formatDate dataretirada}}{{/formatDate}}
+  </div>
+  <div class="col-3 resp">
+    <label class="form-label item">Hora da Retirada: </label>
+    {{horaretirada}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Local de Devolução: </label>
+    {{localdevolucao}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Data de Devolução: </label>
+    {{#formatDate datadevolucao}}{{/formatDate}}
+  </div>  
+  <div class="col-3 resp">
+    <label class="form-label item">Hora da Devolução: </label>
+    {{horadevolucao}}
+  </div>
+  </div>
+
+  <div class="actions">
+      <a class="btn btn-outline-dark" href="/reserve/edit/{{id}}">Editar</a>
+  </div>
+</form>
+
+<form action="/reserve/remove/{{id}}" method="POST">
+  <input class="btn red btn-outline-dark " type="submit" value="Apagar">
+</form></span>
+
+
+</div> 
+{{/each}}
+

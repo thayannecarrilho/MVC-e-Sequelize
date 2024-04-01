@@ -1,0 +1,8 @@
+<div class="container">
+        <h2>Reservas</h2>              
+        {{#each tblclientes}}
+        <div class="card">
+            <a href="/allreserves/{{this.cpf}}" class="btn btn-dark">{{this.cpf}}</a>
+        </div>
+        {{/each}}   
+    </div>
