@@ -32,7 +32,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 👀Veja a interface do projeto
 
-<img width="1100" src="/publibc/img-readme/home-page.gif"> </br>
+<img width="1100" src="/public/img-readme/home-page.gif"> </br>
 <hr>
 
 
